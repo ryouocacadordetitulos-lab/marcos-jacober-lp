@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Marcos Jacober — The Deed Hunter World</title>
+<meta name="description" content="O universo de Marcos Jacober. Programas, mentorias e experiências para quem caça, conquista e ensina." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        gold: '#F4C70F', amber: '#FFB000', brown: '#110A02', stone: '#F3EEDD',
+        olive: '#676F3D', burnt: '#B5531F', midnight: '#01101F', greenblack: '#01120E',
+      },
+      fontFamily: {
+        display: ['Cormorant Garamond', 'Erstoria', 'serif'],
+        body: ['Inter', 'Helvetica Neue', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+};
+</script>
+<style>
+  html,body{background:#110A02;color:#F3EEDD;font-family:'Inter','Helvetica Neue',sans-serif;}
+  .font-display{font-family:'Cormorant Garamond','Erstoria',serif;letter-spacing:-0.01em;}
+  .gold-text{background:linear-gradient(180deg,#FFE26B 0%,#F4C70F 45%,#B58A00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .hero-bg{background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(244,199,15,0.18) 0%, rgba(244,199,15,0) 60%),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(181,83,31,0.15) 0%, rgba(181,83,31,0) 70%),
+    linear-gradient(180deg,#110A02 0%,#1a0f04 60%,#110A02 100%);}
+  .grain{position:absolute;inset:0;pointer-events:none;opacity:0.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
+  .gold-border{border:1px solid rgba(244,199,15,0.25);}
+  .gold-border:hover{border-color:rgba(244,199,15,0.6);}
+  .shadow-gold{box-shadow:0 0 60px -20px rgba(244,199,15,0.4);}
+  .card-bg{background:linear-gradient(180deg,rgba(243,238,221,0.04) 0%,rgba(243,238,221,0.01) 100%);}
+  .divider-gold{height:1px;background:linear-gradient(90deg,transparent 0%,#F4C70F 50%,transparent 100%);opacity:0.4;}
+  .btn-gold{background:linear-gradient(180deg,#F4C70F 0%,#C99E0A 100%);color:#110A02;}
+  .btn-gold:hover{filter:brightness(1.1);box-shadow:0 0 40px -10px rgba(244,199,15,0.6);}
+  .ring-glow{box-shadow:inset 0 0 0 1px rgba(244,199,15,0.2),0 0 80px -20px rgba(244,199,15,0.15);}
+  ::selection{background:#F4C70F;color:#110A02;}
+</style>
+</head>
+<body class="antialiased">
+
+<nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-brown/70 border-b border-gold/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="font-display text-xl tracking-wide"><span class="gold-text">THE DEED HUNTER</span> <span class="text-stone/70">WORLD</span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-stone/70">
+      <a href="#produtos" class="hover:text-gold transition">Produtos</a>
+      <a href="#experiencias" class="hover:text-gold transition">Experiências</a>
+      <a href="#mentoria" class="hover:text-gold transition">Mentoria</a>
+      <a href="#contato" class="btn-gold px-5 py-2 rounded-full font-semibold transition">Entrar no universo</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-bg relative overflow-hidden pt-40 pb-32">
+  <div class="grain"></div>
+  <div class="max-w-6xl mx-auto px-6 relative">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-3 mb-8 text-xs tracking-[0.3em] text-gold/80 uppercase">
+        <span class="h-px w-12 bg-gold/40"></span>
+        Marcos Jacober
+        <span class="h-px w-12 bg-gold/40"></span>
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8">
+        <span class="text-stone">Cace o que</span><br/>
+        <span class="gold-text italic">é seu por direito.</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg md:text-xl text-stone/70 leading-relaxed mb-12 font-light">
+        Programas, mentorias e experiências para quem caça territórios, conquista propriedades e ensina os próximos a fazerem o mesmo. Bem-vindo ao universo do <em>Deed Hunter</em>.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#produtos" class="btn-gold px-8 py-4 rounded-full font-semibold tracking-wide transition">Ver produtos</a>
+        <a href="#contato" class="gold-border px-8 py-4 rounded-full font-semibold text-stone hover:text-gold transition">Falar com a equipe</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-gold mt-32 max-w-3xl mx-auto"></div>
+</section>
+
+<section class="py-24 max-w-4xl mx-auto px-6 text-center">
+  <p class="font-display text-2xl md:text-3xl leading-snug text-stone/90">
+    O <span class="gold-text italic">Deed Hunter</span> entra na sala.<br/>
+    O Godfather já estava lá antes de todo mundo.
+  </p>
+  <p class="mt-8 text-stone/60 max-w-2xl mx-auto leading-relaxed">
+    Cada produto deste universo amplia uma faceta da mesma identidade — preservando unidade estética e personalidade própria. Escolha seu ponto de entrada.
+  </p>
+</section>
+
+<section id="produtos" class="py-24 bg-gradient-to-b from-brown via-greenblack to-brown">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-xs tracking-[0.3em] text-gold/80 uppercase mb-4">Catálogo</p>
+      <h2 class="font-display text-4xl md:text-6xl text-stone">Os <span class="gold-text italic">programas</span></h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="card-bg gold-border rounded-2xl p-8 transition">
+        <div class="flex items-baseline justify-between mb-4">
+          <span class="text-xs tracking-widest text-gold/70 uppercase">Porta de entrada</span>
+          <span class="font-display text-gold text-2xl">01</span>
+        </div>
+        <h3 class="font-display text-3xl text-stone mb-3">The Quest</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">O primeiro território. Onde o caçador descobre o mapa, as armas e a mentalidade necessários para iniciar a caça por propriedades de leilão.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide inline-flex items-center gap-2">Saber mais →</a>
+      </article>
+
+      <article class="card-bg gold-border rounded-2xl p-8 transition">
+        <div class="flex items-baseline justify-between mb-4">
+          <span class="text-xs tracking-widest text-gold/70 uppercase">Comunidade</span>
+          <span class="font-display text-gold text-2xl">02</span>
+        </div>
+        <h3 class="font-display text-3xl text-stone mb-3">Hunterpedia</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">A biblioteca viva do caçador. Acesso recorrente ou vitalício a todo o conhecimento, atualizações e à comunidade que sustenta a caça.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide inline-flex items-center gap-2">Saber mais →</a>
+      </article>
+
+      <article class="card-bg gold-border rounded-2xl p-8 transition">
+        <div class="flex items-baseline justify-between mb-4">
+          <span class="text-xs tracking-widest text-gold/70 uppercase">Avançado</span>
+          <span class="font-display text-gold text-2xl">03</span>
+        </div>
+        <h3 class="font-display text-3xl text-stone mb-3">Next Level</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">Para quem já caça. Estratégias de escala, estruturação fiscal e movimentação de capital que transformam o caçador em operador.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide inline-flex items-center gap-2">Saber mais →</a>
+      </article>
+
+      <article class="card-bg gold-border rounded-2xl p-8 transition">
+        <div class="flex items-baseline justify-between mb-4">
+          <span class="text-xs tracking-widest text-gold/70 uppercase">Sociedade</span>
+          <span class="font-display text-gold text-2xl">04</span>
+        </div>
+        <h3 class="font-display text-3xl text-stone mb-3">Sindicate</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">A confraria. Onde caçadores se unem em sociedade, dividem operações e multiplicam território. O Sindicate não recruta — convida.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide inline-flex items-center gap-2">Saber mais →</a>
+      </article>
+
+      <article class="card-bg gold-border rounded-2xl p-8 transition">
+        <div class="flex items-baseline justify-between mb-4">
+          <span class="text-xs tracking-widest text-gold/70 uppercase">Clube</span>
+          <span class="font-display text-gold text-2xl">05</span>
+        </div>
+        <h3 class="font-display text-3xl text-stone mb-3">Partner's Club</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">Bastidores. Acesso direto à camada que sustenta o universo: parcerias, deal flow privado e a sala onde decisões acontecem.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide inline-flex items-center gap-2">Saber mais →</a>
+      </article>
+
+      <article class="card-bg gold-border rounded-2xl p-8 transition">
+        <div class="flex items-baseline justify-between mb-4">
+          <span class="text-xs tracking-widest text-gold/70 uppercase">Guia</span>
+          <span class="font-display text-gold text-2xl">06</span>
+        </div>
+        <h3 class="font-display text-3xl text-stone mb-3">Mapa do Tesouro</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">O guia definitivo. Onde cada estado, cada leilão, cada oportunidade é mapeada para o caçador que sabe ler antes de pisar.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide inline-flex items-center gap-2">Saber mais →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experiencias" class="py-32 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <p class="text-xs tracking-[0.3em] text-gold/80 uppercase mb-4">Presencial</p>
+      <h2 class="font-display text-4xl md:text-6xl text-stone">As <span class="gold-text italic">experiências</span></h2>
+      <p class="mt-6 text-stone/60 max-w-2xl mx-auto">Onde o universo deixa a tela e ocupa o espaço físico.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="relative card-bg ring-glow rounded-2xl p-10 overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-full blur-3xl"></div>
+        <p class="text-xs tracking-[0.3em] text-gold uppercase mb-4">Imersão</p>
+        <h3 class="font-display text-3xl text-stone mb-4">A Expedição</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">Dias intensivos de imersão em sala. Estratégia, execução e os bastidores do universo do caçador. Vagas controladas.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide">Próxima turma →</a>
+      </div>
+
+      <div class="relative card-bg ring-glow rounded-2xl p-10 overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-amber/10 rounded-full blur-3xl"></div>
+        <p class="text-xs tracking-[0.3em] text-gold uppercase mb-4">Presencial · Orlando</p>
+        <h3 class="font-display text-3xl text-stone mb-4">Expedição Orlando</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">A caça em campo. Visitas a propriedades, leilões reais e operação ao vivo nos Estados Unidos. Para caçadores prontos.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide">Reservar →</a>
+      </div>
+
+      <div class="relative card-bg ring-glow rounded-2xl p-10 overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-burnt/20 rounded-full blur-3xl"></div>
+        <p class="text-xs tracking-[0.3em] text-gold uppercase mb-4">Cruzeiro</p>
+        <h3 class="font-display text-3xl text-stone mb-4">The Deed Hunter at Sea</h3>
+        <p class="text-stone/60 leading-relaxed mb-6">O universo embarca. Dias em alto-mar com a comunidade, conteúdo exclusivo e bastidores que só acontecem fora de terra firme.</p>
+        <a href="#contato" class="text-gold hover:text-amber text-sm tracking-wide">Cabines →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="mentoria" class="py-32 bg-gradient-to-b from-brown to-greenblack">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <p class="text-xs tracking-[0.3em] text-gold/80 uppercase mb-4">Um a um</p>
+    <h2 class="font-display text-4xl md:text-6xl text-stone mb-6">Mentoria <span class="gold-text italic">individual</span></h2>
+    <p class="text-stone/60 max-w-2xl mx-auto leading-relaxed mb-10">
+      Quando o território exige presença direta. Acesso restrito ao próprio Marcos e à camada interna do universo. Vagas raras — não anunciamos, apenas avaliamos.
+    </p>
+    <a href="#contato" class="btn-gold px-10 py-4 rounded-full font-semibold tracking-wide inline-block">Aplicar para mentoria</a>
+  </div>
+</section>
+
+<section class="py-24 max-w-5xl mx-auto px-6">
+  <div class="card-bg gold-border rounded-3xl p-12 md:p-16 relative overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-gold/10 rounded-full blur-3xl"></div>
+    <div class="relative">
+      <p class="text-xs tracking-[0.3em] text-gold uppercase mb-4">Livro</p>
+      <h3 class="font-display text-4xl md:text-5xl text-stone mb-6">Sua primeira propriedade<br/>de leilão em <span class="gold-text italic">90 dias</span></h3>
+      <p class="text-stone/60 max-w-xl leading-relaxed mb-8">O método registrado. O passo-a-passo que o caçador iniciante precisa para sair do zero ao primeiro deed em três meses — sem improviso e sem atalho.</p>
+      <a href="#contato" class="btn-gold px-8 py-3 rounded-full font-semibold inline-block">Quero o livro</a>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="py-32 hero-bg relative overflow-hidden">
+  <div class="grain"></div>
+  <div class="max-w-3xl mx-auto px-6 text-center relative">
+    <h2 class="font-display text-5xl md:text-7xl text-stone leading-tight mb-8">
+      Entre no <span class="gold-text italic">universo.</span>
+    </h2>
+    <p class="text-stone/70 text-lg mb-10 leading-relaxed">
+      Diga onde você está e para onde quer ir. Nossa equipe avalia e indica o ponto certo de entrada — programa, mentoria ou experiência.
+    </p>
+    <a href="mailto:contato@deedhunter.com" class="btn-gold px-10 py-4 rounded-full font-semibold tracking-wide inline-block shadow-gold">Falar com a equipe</a>
+    <p class="mt-8 text-xs tracking-widest text-stone/40 uppercase">Resposta em até 24 horas úteis</p>
+  </div>
+</section>
+
+<footer class="border-t border-gold/10 py-12">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+    <p class="font-display text-lg"><span class="gold-text">THE DEED HUNTER</span> <span class="text-stone/50">WORLD</span></p>
+    <p class="text-stone/40 text-xs tracking-widest uppercase">© Marcos Jacober · Todos os direitos reservados</p>
+  </div>
+</footer>
+
+</body>
+</html>
